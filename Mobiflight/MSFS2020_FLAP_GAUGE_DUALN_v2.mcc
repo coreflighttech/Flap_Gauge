@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="0a41ac8f-4f84-44a4-b1a4-011db0ab6165">
+      <active>true</active>
+      <description>MSFS2020_PMDG737_LEFT_FLAP_POSITION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:switch_458_73X, number)" UUID="e1125526-fe11-46c6-bf1d-9f04ea36d530" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="1" operand="!=" ifValue="600" elseValue="" />
+        </modifiers>
+        <display type="Servo" serial="Flap_DN_v1/ SN-d85-05b" trigger="normal" servoAddress="L_SERVO" servoMin="15" servoMax="255" servoMaxRotationPercent="100" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4886e106-10b8-4d2c-9e54-c713e2bd350a">
+      <active>true</active>
+      <description>MSFS2020_PMDG737_RIGHT_FLAP_POSITION</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:switch_4581_73X, number)" UUID="7a98206e-901b-4527-9737-6c6e40cbf354" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="1" operand="!=" ifValue="600" elseValue="" />
+        </modifiers>
+        <display type="Servo" serial="Flap_DN_v1/ SN-d85-05b" trigger="normal" servoAddress="R_SERVO" servoMin="15" servoMax="255" servoMaxRotationPercent="100" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs />
+</MobiflightConnector>

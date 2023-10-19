@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Flap_DN_v1</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Servo Name="L_SERVO" DataPin="2" />
+  <Servo Name="R_SERVO" DataPin="3" />
+</Config>
