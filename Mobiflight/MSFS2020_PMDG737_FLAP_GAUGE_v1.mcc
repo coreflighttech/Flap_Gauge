@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="b9dbfad3-c294-4e6d-b6a3-428d9d53ef8b">
+      <active>true</active>
+      <description>MSFS2020_PMDG737_FLAP_BACKLIGHT SETTING - CHECK YOUTUBE VIDEO FOR SETTING</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:BL_MainCA, number)" UUID="-" />
+        <test type="Float" value="255" />
+        <modifiers>
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1" y="255" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="SN_Flap_Gauge_v1/ SN-7G3-DF1" trigger="normal" pin="Flap_Backlight" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="449c0d50-fe94-401d-a1ac-8715e1771888">
+      <active>true</active>
+      <description>MSFS2020_PMDG737_FLAP_SERVO_MOTOR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:switch_458_73X, number)" UUID="e1125526-fe11-46c6-bf1d-9f04ea36d530" />
+        <test type="Float" value="2040" />
+        <modifiers>
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="100" y="90" />
+            <value x="300" y="275" />
+            <value x="400" y="365" />
+            <value x="500" y="460" />
+            <value x="600" y="555" />
+            <value x="700" y="650" />
+            <value x="800" y="745" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="SN_Flap_Gauge_v1/ SN-7G3-DF1" trigger="normal" stepperAddress="Flap_Motor" stepperInputRev="1000" stepperOutputRev="4096" stepperTestValue="500" stepperCompassMode="False" stepperAcceleration="2800" stepperSpeed="1400" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs />
+</MobiflightConnector>
