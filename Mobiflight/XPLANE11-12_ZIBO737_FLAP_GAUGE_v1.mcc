@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="b9dbfad3-c294-4e6d-b6a3-428d9d53ef8b">
+      <active>true</active>
+      <description>XPLANE11-12_ZIBO737_FLAP_BACKLIGHT SETTING - CHECK YOUTUBE VIDEO FOR SETTING</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="laminar/B738/electric/panel_brightness[0]" />
+        <test type="Float" value="255" />
+        <modifiers>
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="1" y="255" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="SN_Flap_Gauge_v1/ SN-7G3-DF1" trigger="normal" pin="Flap_Backlight" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="449c0d50-fe94-401d-a1ac-8715e1771888">
+      <active>true</active>
+      <description>XPLANE11-12_ZIBO737_FLAP_SERVO_MOTOR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.3.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="sim/flightmodel2/controls/flap1_deploy_ratio" />
+        <test type="Float" value="655" />
+        <modifiers>
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="0.081" y="90" />
+            <value x="0.142" y="185" />
+            <value x="0.224" y="275" />
+            <value x="0.28" y="360" />
+            <value x="0.34" y="465" />
+            <value x="0.551" y="560" />
+            <value x="0.67" y="650" />
+            <value x="1" y="750" />
+          </interpolation>
+        </modifiers>
+        <display type="Stepper" serial="SN_Flap_Gauge_v1/ SN-7G3-DF1" trigger="normal" stepperAddress="Flap_Motor" stepperInputRev="1000" stepperOutputRev="4096" stepperTestValue="500" stepperCompassMode="False" stepperAcceleration="2800" stepperSpeed="1400" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs />
+</MobiflightConnector>
