@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Nano</ModuleType>
+  <ModuleName>CoreFlightTech FLAP</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Stepper Name="Flap_Motor" Pin1="2" Pin2="3" Pin3="4" Pin4="5" BtnPin="6" Mode="1" Backlash="6" Deactivate="true" Profile="1" />
+  <Output Name="Flap_Backlight" Pin="9" />
+</Config>
